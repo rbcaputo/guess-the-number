@@ -1,0 +1,77 @@
+/* Styles start */
+/* Dark screen mode start */
+.dark-mode {
+  background-color: var(--dark-grey);
+}
+
+.dark-mode .cont_main,
+.dark-mode .cont_menu {
+  background-color: var(--mid-grey);
+}
+
+.dark-mode .cont_output,
+.dark-mode .cont_warn,
+.dark-mode .cont_new-game {
+  background-color: var(--mid-grey-alt);
+}
+
+.dark-mode div,
+.dark-mode fieldset,
+.dark-mode h1,
+.dark-mode p,
+.dark-mode label,
+.dark-mode legend {
+  color: var(--light-grey);
+  border-color: var(--light-grey);
+}
+
+.dark-mode .cont_menu-btn:hover,
+.dark-mode .cont_screen-mode:hover,
+.dark-mode .cont_lang-mode:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .cheat {
+  color: var(--red);
+}
+
+/* Dark screen mode end*/
+/* Light screen mode start */
+.light-mode {
+  background-color: var(--off-white);
+}
+
+.light-mode .cont_main,
+.light-mode .cont_menu,
+.light-mode .cont_new-game {
+  background-color: var(--off-white-alt);
+}
+
+.light-mode .cont_output,
+.light-mode .cont_warn,
+.light-mode .cont_new-game {
+  background-color: var(--white);
+}
+
+.light-mode div,
+.light-mode fieldset,
+.light-mode h1,
+.light-mode p,
+.light-mode label,
+.light-mode legend {
+  color: var(--dark-grey);
+  border-color: var(--dark-grey);
+}
+
+.light-mode .cont_menu-btn:hover,
+.light-mode .cont_screen-mode:hover,
+.light-mode .cont_lang-mode:hover {
+  background-color: rgba(56, 56, 61, 0.2);
+}
+
+.light-mode .cheat {
+  color: var(--yellow);
+}
+
+/* Light screen mode end */
+/* Styles end */

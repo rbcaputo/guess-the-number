@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="./etc/favicon.ico" rel="icon" type="image/ico" />
+  <title>Guess The Number</title>
+
+  <link href="./css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+
+  <script src="./js/meta-elements.js" type="text/javascript" defer></script>
+  <script src="./js/lang.js" type="text/javascript" defer></script>
+  <script src="./js/meta-variables.js" type="text/javascript" defer></script>
+  <script src="./js/prints.js" type="text/javascript" defer></script>
+  <script src="./js/cheat.js" type="text/javascript" defer></script>
+  <script src="./js/menu.js" type="text/javascript" defer></script>
+  <script src="./js/menu-btns.js" type="text/javascript" defer></script>
+  <script src="./js/main.js" type="text/javascript" defer></script>
+  <script src="./js/main-btns.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+  <div class="wrapper dark-mode">
+    <div class="cont_menu-btn" id="btn-menu">
+      <img class="btn-icon" id="menu-icon" src="./img/menu_cogwheel.png" alt="Settings menu button" />
+      <p class="menu-btn--text"></p>
+    </div>
+    <div class="lock cont_warn" id="warn-window"><p class="lock warn-text"></p></div>
+    <!-- Score start -->
+    <div class="cont_score">
+      <p class="score-title"></p>
+      <p class="score-text--win"><span class="value-num"></span></p>
+      <p class="score-text--loss"><span class="value-num"></span></p>
+    </div>
+    <!-- Score end -->
+    <!-- Settings menu start -->
+    <div class="lock cont_menu" id="menu-window">
+      <p class="lock menu-title"></p>
+      <!-- Numbers settings start -->
+      <div class="lock cont_set">
+        <div class="lock cont_set-num">
+          <label class="lock input-label" id="label-min-num"></label>
+          <input class="lock input-field-set" id="min-num-field" type="text" />
+        </div>
+        <div class="lock cont_set-num">
+          <label class="lock input-label" id="label-max-num"></label>
+          <input class="lock input-field-set" id="max-num-field" type="text" />
+        </div>
+        <div class="lock cont_set-num">
+          <label class="lock input-label">Chances</label>
+          <input class="lock input-field-set" id="chances-num-field" type="text" />
+        </div>
+        <div class="lock cont_set-btn">
+          <button class="lock btn default" id="btn-default" type="button"></button>
+          <button class="lock btn apply" id="btn-apply" type="button"></button>
+        </div>
+      </div>
+      <!-- Numbers settings end -->
+      <!-- Screen mode button start -->
+      <div class="lock cont_screen-mode--btn" id="btn-mode">
+        <img class="lock btn-icon" id="mode-icon" src="./img/screen_mode.png" alt="Switch light/dark screen mode button" />
+        <p class="lock screen-mode--text"></p>
+      </div>
+      <!-- Screen mode button end -->
+      <!-- Switch language button start -->
+      <div class="lock cont_lang-mode--btn" id="btn-lang">
+        <img class="lock btn-icon" id="lang-icon" src="./img/lang_pt.png" alt="Switch english/portuguese language button" />
+        <p class="lock lang-mode--text"></p>
+      </div>
+      <!-- Switch language button end -->
+    </div>
+    <!-- Settings menu end -->
+    <!-- Main start -->
+    <div class="cont_main">
+      <h1 class="main-title"></h1>
+      <p class="main-description"><span class="value-num"></span><span class="value-num"></span></p>
+      <form action="" onsubmit="return false">
+        <fieldset class="cont_input">
+          <legend class="input-label main-label"></legend>
+          <input class="input-field" id="input-field" type="text" />
+          <button class="btn hidden" id="btn-reload" type="button" disabled></button>
+          <button class="btn guess" id="btn-guess" type="button"></button>
+          <p class="chances-text"></span></p>
+        </fieldset>
+      </form>
+      <div class="cont_output"><p class="output-text" id="output-text">...</p></div>
+    </div>
+    <!-- Main end -->
+    <div class="cont_new-game" id="new-game-window"><p class="new-game--text"></p></div>
+    <p class="cheat hidden"></p>
+  </div>
+</body>
+
+</html>
